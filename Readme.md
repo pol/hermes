@@ -25,3 +25,9 @@ Should we refuse any generated URIs that have `/^__.*$/`?  Maybe.
  - `__hermes/users`: user CRUD (RESTful)
 
 All users are admins, but you can't edit unless you are logged in.  Also, require a session for the POST actions of Mercury.
+
+### Rev 3 ###
+
+- Templates
+
+We will not always want to be able to edit the entire page, nor will we want to have to go to every page and commit the same edits to static site elements like headers, footers, menus, etc.  We should provide an interface for a user to specify certain page elements for editability, and also for site-wide consistency (through html classes, for instance)s
